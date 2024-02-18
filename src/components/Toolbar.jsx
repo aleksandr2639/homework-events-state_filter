@@ -4,7 +4,7 @@ function Toolbar(props){
     const { menu, selected, onSelectFilter } = props;
     const renderFilters = (menu) => {
       return menu.map((el) => {
-        const className = el === selected ? "button-selected" : "button";
+        const className = el === selected ? "button__selected" : "button";
         return (
           <button
             className={className}
@@ -17,7 +17,7 @@ function Toolbar(props){
     };
 
     return (
-      <div className="list_buttons">
+      <div className="list__buttons">
         {renderFilters(menu)}
       </div>
     );

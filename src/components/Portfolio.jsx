@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import projects from '../projects'
-import ProjectList from './ProjectList'
-import Toolbar from './Toolbar'
+import { useState } from 'react';
+import projects from '../projects';
+import ProjectList from './ProjectList';
+import Toolbar from './Toolbar';
 
 function Portfolio() {
-  const[item, setState] = useState({selected: 'All'})
-  const menu = ["All", "Websites", "Flayers", "Business Cards"]
+  const[item, setState] = useState({selected: 'All'});
+  const menu = ["All", "Websites", "Flayers", "Business Cards"];
 
   return (
     <>
